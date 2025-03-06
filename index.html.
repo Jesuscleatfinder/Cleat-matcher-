@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Cleat Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cleat Finder Logo">
+        </div>
+        <h1>Find Your Perfect Soccer Cleats</h1>
+        <p>Answer a few questions and get personalized recommendations!</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#cleat-results">Cleats</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-section">
+        <h2>Find Your Perfect Cleats</h2>
+        <form id="cleat-form">
+            <label for="size">Your Shoe Size:</label>
+            <input type="number" id="size" name="size" required min="3" max="15">
+
+            <label for="position">Your Playing Position:</label>
+            <select id="position" name="position">
+                <option value="forward">Forward</option>
+                <option value="midfield">Midfielder</option>
+                <option value="defense">Defender</option>
+                <option value="goalkeeper">Goalkeeper</option>
+            </select>
+
+            <label for="brand">Preferred Brand:</label>
+            <select id="brand" name="brand">
+                <option value="any">Any</option>
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="puma">Puma</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="playing-surface">Playing Surface:</label>
+            <select id="playing-surface" name="playing-surface">
+                <option value="firm-ground">Firm Ground (FG)</option>
+                <option value="soft-ground">Soft Ground (SG)</option>
+                <option value="artificial-ground">Artificial Ground (AG)</option>
+                <option value="turf">Turf (TF)</option>
+                <option value="indoor">Indoor (IC)</option>
+            </select>
+
+            <label for="budget">Budget Range:</label>
+            <input type="range" id="budget" name="budget" min="50" max="300" step="10">
+            <span id="budget-value">$150</span>
+
+            <button type="submit">Find My Cleats</button>
+        </form>
+    </section>
+
+    <section id="cleat-results">
+        <h2>Recommended Cleats</h2>
+        <div id="cleat-list"></div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"These cleats are amazing! Best fit ever." - Alex</p>
+        </div>
+        <div class="review">
+            <p>"Helped me find the perfect boots for my playstyle." - Jordan</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about helping players find the best cleats for their needs. Our team researches the latest cleats to bring you personalized recommendations.</p>
+    </section>
+
+    <section class="email-signup">
+        <h2>Subscribe for Exclusive Cleat Drops</h2>
+        <p>Get early access to new cleats and special discounts.</p>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button id="subscribe">Subscribe</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@cleatfinder.com</p>
+        <p>Phone: +1 800 555 0199</p>
+        <p>Follow us on <a href="#">Instagram</a> and <a href="#">Twitter</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ultimate Cleat Finder. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
